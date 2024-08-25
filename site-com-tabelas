@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Navegação Interna</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #f4f4f4;
+            margin: 0;
+            border-bottom: 1px solid #ddd;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            display: inline-block;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+            border-radius: 4px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+        section h2 {
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Loja</h1>
+        <nav>
+            <ul>
+                <li><a href="#Clientes">Clientes</a></li>
+                <li><a href="#Produtos">Produtos</a></li>
+                <li><a href="#Compras">Compras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Clientes">
+            <h2>Clientes</h2>
+            <table>
+                <caption>Tabela de clientes</caption>
+                <thead>
+                    <tr>
+                        <th>ID do cliente</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>João</td>
+                        <td>joao@gmail.com</td>
+                        <td>(66) 99191-9191</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Maria</td>
+                        <td>maria@gmail.com</td>
+                        <td>(66) 99292-9292</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Carlos</td>
+                        <td>carlos@gmail.com</td>
+                        <td>(66) 99393-9393</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="Produtos">
+            <h2>Produtos</h2>
+            <table>
+                <caption>Tabela de produtos</caption>
+                <thead>
+                    <tr>
+                        <th>ID do produto</th>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Martelo</td>
+                        <td>R$ 32,90</td>
+                        <td><a href="https://www.amazon.com.br/Martelo-Unha-Cabeça-Fibra-Mtx/dp/B07HZ2HJZ2/ref=asc_df_B07HZ2HJZ2/?tag=googleshopp00-20&linkCode=df0&hvadid=379699300471&hvpos=&hvnetw=g&hvrand=15663127734763105901&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9101932&hvtargid=pla-846836399660&psc=1&mcid=dd078208d1fb3d4885d5c2a9d4ebe4bb">Martelo</a></td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Pá</td>
+                        <td>R$ 73,90</td>
+                        <td><a href="https://www.amazon.com.br/Bico-com-Cabo-Madeira-71cm-TRAMONTINA-77459434/dp/B076MBCGKH/ref=asc_df_B076MBCGKH/?tag=googleshopp00-20&linkCode=df0&hvadid=405183917262&hvpos=&hvnetw=g&hvrand=7288695016455039275&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9101932&hvtargid=pla-942654072471&psc=1&mcid=536794ed45283d5faa435d3f8f18571a">Pá</a></td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Alicate</td>
+                        <td>R$ 33,70</td>
+                        <td><a href="https://www.amazon.com.br/MTX-Alicate-Universal-8-Pol-MTX-169069/dp/B0778ZNMQS/ref=asc_df_B0778ZNMQS/?tag=googleshopp00-20&linkCode=df0&hvadid=379804627379&hvpos=&hvnetw=g&hvrand=10923514200645330287&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9101932&hvtargid=pla-854126343961&psc=1&mcid=b421feb2cf0036c2b4f524c9f6f1fc82">Alicate</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="Compras">
+            <h2>Compras</h2>
+            <table>
+                <caption>Tabela de compras</caption>
+                <thead>
+                    <tr>
+                        <th>ID da compra</th>
+                        <th>ID do cliente</th>
+                        <th>ID do produto</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>010</td>
+                        <td>001</td>
+                        <td>101</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>020</td>
+                        <td>002</td>
+                        <td>102</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>030</td>
+                        <td>003</td>
+                        <td>103</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Loja. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
