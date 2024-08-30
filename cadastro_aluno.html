@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro do Aluno</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Cadastro do Aluno</h2>
+    <form action="/login" method="POST">
+        <label for="username">Nome do aluno:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+
+        <label for="cpf">CPF:</label>
+        <input type="number" id="cpf" name="cpf" required>
+        <br><br>
+
+        <h3>Notas</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Matemática</th>
+                    <th>Português</th>
+                    <th>Geografia</th>
+                    <th>Ciências</th>
+                    <th>História</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="number" placeholder="Nota 1" name="matematica"></td>
+                    <td><input type="number" placeholder="Nota 1" name="portugues"></td>
+                    <td><input type="number" placeholder="Nota 1" name="geografia"></td>
+                    <td><input type="number" placeholder="Nota 1" name="ciencias"></td>
+                    <td><input type="number" placeholder="Nota 1" name="historia"></td>
+                </tr>
+                <tr>
+                    <td><input type="number" placeholder="Nota 2" name="matematica"></td>
+                    <td><input type="number" placeholder="Nota 2" name="portugues"></td>
+                    <td><input type="number" placeholder="Nota 2" name="geografia"></td>
+                    <td><input type="number" placeholder="Nota 2" name="ciencias"></td>
+                    <td><input type="number" placeholder="Nota 2" name="historia"></td>
+                </tr>
+                <tr>
+                    <td><input type="number" placeholder="Média" name="matematica"></td>
+                    <td><input type="number" placeholder="Média" name="portugues"></td>
+                    <td><input type="number" placeholder="Média" name="geografia"></td>
+                    <td><input type="number" placeholder="Média" name="ciencias"></td>
+                    <td><input type="number" placeholder="Média" name="historia"></td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+
+        <label for="aprovado">
+            <input type="radio" id="aprovado" name="aprovado" value="aprovado" checked>
+            Aprovado
+        </label>
+        <br>
+        <label for="reprovado">
+            <input type="radio" id="reprovado" name="aprovado" value="reprovado">
+            Reprovado
+        </label>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
