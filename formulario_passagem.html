@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Passagem</title>
+</head>
+
+<body>
+    <h2>Reserva de Passagem</h2>
+    <form action="/login" method="POST">
+        <label for="username">Nome:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+
+        <label for="surname">Sobrenome:</label>
+        <input type="text" id="surname" name="surname" required>
+        <br><br>
+
+        <label for="origem">Origem:</label>
+        <select id="origem" name="origem">
+            <option value="sao_paulo">São Paulo</option>
+            <option value="rio_de_janeiro">Rio de Janeiro</option>
+            <option value="belo_horizonte">Belo Horizonte</option>
+            <option value="sinop">Sinop</option>
+            <option value="salvador">Salvador</option>
+        </select>
+        <br><br>
+
+        <label for="destino">Destino:</label>
+        <select id="destino" name="destino">
+            <option value="sao_paulo">São Paulo</option>
+            <option value="rio_de_janeiro">Rio de Janeiro</option>
+            <option value="belo_horizonte">Belo Horizonte</option>
+            <option value="sinop">Sinop</option>
+            <option value="salvador">Salvador</option>
+        </select>
+        <br><br>
+
+        <label for="feminino">
+            <input type="radio" id="feminino" name="genero" value="feminino" checked>
+            Feminino
+        </label>
+        <br>
+
+        <label for="masculino">
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            Masculino
+        </label>
+        <br><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required>
+        <br><br>
+
+        <h3>Tipo de bagagem</h3>
+        <label for="bagagem_mao">
+            <input type="checkbox" id="bagagem_mao" name="bagagem" value="mao" checked>
+            Bagagem de mão
+        </label>
+        <br>
+
+        <label for="bagagem_despachada">
+            <input type="checkbox" id="bagagem_despachada" name="bagagem" value="despachada" checked>
+            Bagagem despachada
+        </label>
+        <br><br>
+
+        <h3>Restrição alimentar</h3>
+        <label for="vegano">
+            <input type="radio" id="vegano" name="alimentacao" value="vegano" checked>
+            Vegano
+        </label>
+        <br>
+
+        <label for="vegetariano">
+            <input type="radio" id="vegetariano" name="alimentacao" value="vegetariano">
+            Vegetariano
+        </label>
+        <br>
+
+        <label for="sem_gluten">
+            <input type="radio" id="sem_gluten" name="alimentacao" value="sem_gluten">
+            Sem glúten
+        </label>
+        <br>
+
+        <label for="sem_lactose">
+            <input type="radio" id="sem_lactose" name="alimentacao" value="sem_lactose">
+            Sem lactose
+        </label>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
